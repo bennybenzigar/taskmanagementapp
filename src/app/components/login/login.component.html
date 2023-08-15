@@ -1,0 +1,45 @@
+<div class="container mainDiv">
+
+
+    <div class="row mainDiv">
+        <div class="col-md-6">
+            <h3 class="text-primary ">Login</h3>
+
+            <div >
+                <img src="assets/login.PNG" class="img-fluid" alt="">
+    
+            </div>
+        </div>
+        
+
+
+        <!--formdiv  -->
+        <div class="col-md-6 formdiv">
+
+            
+            <form action="" [formGroup]="loginForm" (ngSubmit)="login()">
+
+                <input type="email"  id="email" placeholder=" please enter your email" formControlName="email"
+                    class="form-control m-2">
+
+                <input type="password" id="password" placeholder="please enter your password" autocomplete="off" formControlName="password"
+                    class="form-control m-2">
+                    
+                <div class="text-danger m-2" *ngIf="errorDiv">
+                    <p>{{errorDivTxt}}</p>
+                </div>
+
+                <div class="text-center m-2">
+                    <a [routerLink]="'/register'">Create an account? </a> 
+                 </div>
+
+                <div class="w-100 m-2 text-end ">
+                    <button class="btn btn-primary m-2" [disabled]="isProcessing" type="submit" >Login</button>
+                </div>
+
+
+            </form>
+
+        </div>
+    </div>
+</div>

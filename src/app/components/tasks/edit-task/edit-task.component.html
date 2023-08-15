@@ -1,0 +1,45 @@
+<app-navbar></app-navbar>
+
+<div class="container w-100 mainDiv">
+
+
+    <div class="row mainDiv w-100">
+       
+        
+        <!--formdiv  -->
+        <div class="col-md-6 formdiv card  p-4">
+          
+            <form action="" [formGroup]="taskForm" (ngSubmit)="editData()">
+                <h3 class="my-4"> 
+                
+                    Edit Task
+                </h3>
+                
+                <input type="text"  id="title" placeholder="title" formControlName="title"
+                    class="form-control m-2">
+
+                <input type="text" id="description" placeholder="description
+                " autocomplete="off" formControlName="description"
+                    class="form-control m-2">
+
+                    <select id="status" formControlName="status" class="form-control m-2">
+                        <option value="" disabled selected>Select a status</option>
+                        <option value="completed">Completed</option>
+                        <option value="todo">To-Do</option>
+                        <option value="inprogress">In Progress</option>
+                      </select>
+                    
+                <div class="text-danger m-2" *ngIf="errorDiv">
+                    <p>{{errorDivTxt}}</p>
+                </div>
+
+                <div class="w-100  text-end ">
+                    <button class="btn btn-primary m-2" [disabled]="isProcessing" type="submit" >Update</button>
+                </div>
+
+
+            </form>
+
+        </div>
+    </div>
+</div>

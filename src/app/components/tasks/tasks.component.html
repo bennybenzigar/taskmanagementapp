@@ -1,0 +1,54 @@
+<app-navbar></app-navbar>
+
+<div class="container-fluid mt-3">
+
+<div class="w-100 card  ">
+  
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="col-6 ">
+      <img src="assets/task.PNG" class="img-fluid m-3" alt="">
+
+    </div>
+    <div class="col-6 text-center">
+      <button class="btn btn-primary" (click)="createTask()"> Create Task</button>
+
+    </div>
+  </div>
+</div>
+
+<div class="table-responsive m-3">
+
+  <table class="table  table-bordered table-light table-striped table-hover">
+    <thead>
+      <tr class="mt-2 text-center">
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Status</th>
+        <th scope="col">
+
+         
+          Action
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+
+
+      <tr class="m-2" *ngFor="let task of data, let i=index">
+       
+        <td>{{task.tasks.title}}</td>
+        <td>{{task.tasks.description}}</td>
+        <td>{{task.tasks.status}}</td>
+       
+        <td class="text-center">
+          <button class="m-2 btn btn-info" (click)="edit(task)" type="button" >edit</button>
+          <button class="m-2 btn btn-danger" type="button" (click)="deleteData(task)">delete</button>
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+  
+
+</div>

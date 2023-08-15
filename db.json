@@ -1,0 +1,72 @@
+{
+  "task": [
+    {
+      "userid": "1",
+      "email": "abc@gmail.com",
+      "password": "12345",
+      "tasks": {
+        "title": "ab",
+        "description": "abc",
+        "status": "inprogress"
+      },
+      "id": 1
+    },
+    {
+      "id": 3,
+      "userid": 2,
+      "email": "abc@gmail.com",
+      "password": 12345,
+      "tasks": {
+        "id": 1,
+        "title": "login page Creation",
+        "description": "create a login page with email and password",
+        "status": "completed"
+      }
+    },
+    {
+      "userid": 1,
+      "email": "abc@gmail.com",
+      "password": "12345",
+      "tasks": {
+        "title": "a",
+        "description": "aq",
+        "status": "completed"
+      },
+      "id": 5
+    },
+    {
+      "userid": 1,
+      "email": "abc@gmail.com",
+      "password": "12345",
+      "tasks": {
+        "title": "a",
+        "description": "a",
+        "status": "completed"
+      },
+      "id": 6
+    },
+    {
+      "email": "abchihhi@gmail.com",
+      "password": "5f",
+      "userId": 0,
+      "id": 7
+    },
+    {
+      "email": "ab@gmail.com",
+      "password": "12345",
+      "userId": 0,
+      "id": 8
+    },
+    {
+      "userid": 8,
+      "email": "ab@gmail.com",
+      "password": "12345",
+      "tasks": {
+        "title": "w",
+        "description": "d",
+        "status": "todo"
+      },
+      "id": 9
+    }
+  ]
+}

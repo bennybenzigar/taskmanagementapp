@@ -1,0 +1,10 @@
+.toast-success {
+    background-color: #28a745;
+    color: #fff;
+
+    z-index: 1;
+    position: fixed;
+    top:0,
+    
+  }
+  
